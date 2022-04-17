@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My footprint</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/My footprint.css" />
+  </head>
+  <body>
+    <!-- 页眉 -->
+    <header>
+      <div class="inner">
+        <a href="It is me.html"><img id="me" src="imgs/kobe.jpg"></a>
+            <div id="welcome"><p>曼巴门徒网欢迎您~~~</p></div>
+            
+            <!-- 导航区 -->
+            <nav>
+                <ul>
+                  <li><a href="index.html">首页</a></li>
+                  <li><a href="It is me.html">生平简介</a></li>
+                  <li style="background-color: #4774b6;"><a style="color:#fff" href="My footprint.html">科比中国行</a></li>
+                  <li><a href="My photo.html">个人影展</a></li>
+                  <li><a href="Contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+            <!-- 导航区 -->
+      </div>
+    </header>
+
+    <!-- 图片 -->
+    <div class="bg_img">
+      <div class="img_inner">
+        <img src="imgs/9.jpg" alt="" />
+        <div class="inner">
+          <div class="whiteblock">
+            <div class="whiteblock_text1">
+              科比中国行足迹<br />
+              <div class="whiteblock_text2">
+                My footprint!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 内容区 -->
+    <div id="main">
+      <div class="inner">
+        <!-- 左侧导航栏 -->
+        <div class="nav">
+          
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>科比中国行足迹</title>
+<style>
+body{
+	margin: 0px;
+}
+.kobe_map{
+	width: 960px;
+	height: 520px;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+.kobe_map .china_map{
+	width: 630px;
+	height: 420px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+.kobe_map .china_map .map{
+	width: 630px;
+	height: 420px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 9;
+}
+.kobe_map .china_map .prev,.kobe_map .china_map .next{
+	background: url(http://static.ws.126.net/f2e/sports/copa_america_2015/images/slideshow.png) 0 0 no-repeat;
+	height: 76px;
+	width: 76px;
+	position: absolute;
+	top: 174px;
+	z-index: 99;
+	filter: alpha(opacity=30);
+	opacity: .3;
+	cursor: pointer;
+}
+.kobe_map .china_map .prev{
+	left: 0px;
+}
+.kobe_map .china_map .next{
+	background-position: -76px 0;
+	right: 0px;
+}
+.kobe_map .china_map .prev:hover,.kobe_map .china_map .next:hover{
+	right: 0px;
+	filter: alpha(opacity=75);
+	opacity: .75;
+}
+.kobe_map .info{
+	width: 330px;
+	height: 420px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+.info ul{
+	list-style: none;
+	width: 330px;
+	height: 30000em;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.info ul li{
+	list-style: none;
+	width: 310px;
+	height: 400px;
+	padding:10px;
+	float: left;
+	background-color: #260935;
+	line-height: 26px;
+	font-size: 16px;
+	font-family: "Microsoft Yahei";
+	color: #fff;
+	overflow-y:auto ;
+}
+.info ul li h3{
+	font: 600 22px/40px "Microsoft Yahei";
+	margin: 0px;
+}
+.info ul li h4{
+	font: 600 18px/32px "Microsoft Yahei";
+	margin: 0px;
+	margin-bottom: 15px;
+}
+.kobe_map .time_line{
+	width: 960px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	background:url(http://static.ws.126.net/sports/2015/8/8/line.jpg) -40px 0 no-repeat;
+}
+.kobe_map .time_line ul{
+	list-style: none;
+	width: 30000em;
+	height:100px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 280px;
+	top: 0px;
+}
+.kobe_map .time_line ul li{
+	list-style: none;
+	width: 70px;
+	height: 85px;
+	float: left;
+	margin-right: 130px;
+	background: url(http://static.ws.126.net/sports/2015/8/8/year_p.png) 24px 33px no-repeat;
+	overflow: hidden;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.kobe_map .time_line ul li:hover,.kobe_map .time_line ul li.on{
+	background-image: url(http://static.ws.126.net/sports/2015/8/8/year_p_hover.png);
+}
+.kobe_map .time_line ul li h4{
+	display: block;
+	width: 70px;
+	height: 30px;
+	font: 600 16px/30px "Microsoft Yahei";
+	float: left;
+	text-align: center;
+	margin: 0px;
+}
+.kobe_map .time_line ul li:hover h4{
+	color: #0b479d;
+}
+.kobe_map .time_line ul li.on h4{
+	display: none;
+}
+.kobe_map .cover{
+	width: 960px;
+	height: 520px;
+	background:url(http://static.ws.126.net/sports/2015/8/10/2015081021070761d1e.jpg) 0 0 no-repeat;
+	cursor: pointer;
+	z-index: 9999;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.kobe_map .china_map .map span{
+	height:25px;
+    width:40px;
+	position:absolute;
+	font:600 14px/25px "Microsoft Yahei";
+	left:-3px;
+	bottom:35px;
+    color:#000;
+}
+</style>
+</head>
+<body style="text-align:center;clear:both">
+	<div class="kobe_map">
+		<div class="cover" id="cover">阅读更多>></div>
+		<div class="china_map">
+			<div class="map" id="c_map">
+			</div>
+			<div class="prev" id="prev"></div>
+			<div class="next" id="next"></div>
+		</div>
+		<div class="info">
+			<ul id="info">
+				<li class="current">
+					<h3>2001年</h3>
+					<h4>地点：北京</h4>
+					2001年科比踏上中国土地，中国行为期三天，当时科比还在跟奥尼尔合作，他还顶着蘑菇头，那时候湖人刚刚连冠，科比已经初具人气。当时科比在中国参加了篮球训练营，他还在长城上表演了各种花式暴扣，其中包括了胯下换手大风车重扣，他是历史上第一个在长城完成扣篮的人。
+				</li>
+				<li>
+					<h3>2006年</h3>
+					<h4>地点：北京</h4>
+					2006年，科比在同猛龙一战上演了惊世之作，他单场轰下了81分，9月份科比乘坐私人飞机抵达北京，这是他那一年亚洲行最后一站，在北京科比参加了高中联赛揭幕仪式，还传授了中国高中生球技，并亲自颁发了最佳球员奖。这次北京行主办方特意让科比坐上了龙椅，寓意球皇登基。有意思的是，当时科比恰好下塔在东方君悦酒店跟章子怡在同一家酒店，两人还见面聊了几句，章子怡兴奋开怀大笑。
+				</li>
+				<li>
+					<h3>2007年</h3>
+					<h4>地点：台北、香港、上海、北京</h4>
+					2007年，科比的亚洲行命名为“超自然”，他在中国前往了台北、香港、上海和北京四个城市，科比在各个城市开设训练营，向球迷们展示篮球的魅力。这是科比第一次到上海，在训练营他与小球员密切互动，对小球员做出指导。
+				</li>
+				<li>
+					<h3>2008年</h3>
+					<h4>地点：北京</h4>
+					与之前几次由科比的赞助商安排参加商业活动不同，这一次科比是带着比赛任务来的，2008年北京奥运会，科比领军的救赎之队在北京上演完美救赎，他们拿到了奥运会金牌收复了失地，科比在奥运会开幕式上出尽风头令其队友都坦言嫉妒飞侠的人气，在决赛打西班牙的比赛科比命中关键3+1，拿到了个人生涯首枚奥运会金牌。
+				</li>
+				<li>
+					<h3>2009年</h3>
+					<h4>地点：台北、香港、上海、成都、北京、杭州</h4>
+					这一年，科比带领湖人首次在没有奥尼尔的情况下拿到总冠军，这一年的中国行被定义为胜者凯旋之旅。这是科比第一次前往成都，他在成都受到了顶礼膜拜，他亲自上场教孩子们打球。他还化身慈善大使与宋庆龄基金会展开合作，共同开展慈善事业。在北京慈善晚宴上，科比和湖人队友孙悦相聚，亲密拥抱。
+				</li>
+				<li>
+					<h3>2010年</h3>
+					<h4>地点：上海、长春、北京、广州、成都、杭州</h4>
+					这一次科比中国行为期5天，当时正值上海世博会期间，所以这次的中国行主题名为为世博会加油。在这5天里，科比首日造访北京世纪剧院，次日前往长春科技大学、长春市体育馆做活动，第3天前往杭州师范大学、西湖体育馆，第4日赴上海观世博会，第5日赴广州华南农业大学、暨南大学以及四川成都。在活动期间，科比和章子怡、谭晶等明星一起慰问部分世博会的志愿者。
+				</li>
+				<li>
+					<h3>2011年</h3>
+					<h4>地点：沈阳、长沙、南京</h4>
+					2011年7月15日、16日和17日，科比分别在沈阳、长沙和南京进行了中国行，科比进行了一些小型的见面会，也还教学员打球，在长沙他在离场时将自己的衣服、鞋子脱下来送给了球迷，半裸小跑离场。在同周杰伦、飞轮海成员炎亚纶等明星参加活动时，炎亚纶还双膝给科比下跪，因为科比是他的偶像，此事还引来不小争议。
+				</li>
+				<li>
+					<h3>2012年</h3>
+					<h4>地点：济南、武汉、广州、上海</h4>
+					2012年中国行科比造访了4个城市，在上海他同很多名人进行了一场慈善赛，其中包括周杰伦，飞侠打了15分钟就轰下了68分。
+				</li>
+				<li>
+					<h3>2013年</h3>
+					<h4>地点：香港、深圳、西安、上海、南京、北京</h4>
+					科比本次中国行在中国呆了9天时间，在深圳行时一位球迷接受采访竟然喜极而泣，国外多家媒体报道了这个新闻，捧红了“落泪哥”。很多球迷为了看球迷甚至爬上了现场一辆警车，还有球迷爬上了灯杆。在中国科比还尝试了做面条。在北京的活动上，一位女高材生为科比献上了24朵玫瑰，他透露自己本来可以去哈佛读书，但因为科比她选择了去科比的老家费城读书。值得一提的是，科比这次是拖着伤腿来的，他相当敬业。之后科比还曾带领湖人到中国打中国赛，但因为伤病他并未能登场。
+				</li>
+				<li>
+					<h3>2014年</h3>
+					<h4>地点：上海</h4>
+					2014年科比中国行全部安排在了上海，他在江湾体育馆出席了球迷活动，指导小球员打球，飞侠还按耐不住亲自上场与小球员单挑。在一个小球员命中一锤定音的三分球之后，科比决定为他们送出签名球鞋和T恤，这位白衣24号球迷听闻之后不禁再次走到科比面前，猛然跪下，双手合十，做出跪拜的姿势。
+				</li>
+				<li>
+					<h3>2015年</h3>
+					<h4>地点：广州、上海</h4>
+					2015年8月1日，科比抵达广州开始了又一次中国行，他在广州遇到了球迷热情欢迎，美媒体甚至报道说像披头士乐队的待遇。之后科比前往了上海，他此行已经开始为退役后做打算，他跟阿里巴巴公司建立了合作关系。
+				</li>
+			</ul>
+		</div>
+		<div class="time_line">
+			<ul id="line">
+				<li class="on"><h4>2001年</h4></li>
+				<li><h4>2006年</h4></li>
+				<li><h4>2007年</h4></li>
+				<li><h4>2008年</h4></li>
+				<li><h4>2009年</h4></li>
+				<li><h4>2010年</h4></li>
+				<li><h4>2011年</h4></li>
+				<li><h4>2012年</h4></li>
+				<li><h4>2013年</h4></li>
+				<li><h4>2014年</h4></li>
+				<li><h4>2015年</h4></li>
+			</ul>
+		</div>
+	</div>
+<script src="http://static.ws.126.net/f2e/libs/jquery.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=6a8845750b104c0b927355de9c6a526e"></script>
+<script>
+	var index = 0;
+	var cover = jQuery("#cover");
+	var coverH = cover.height();
+	var prev = jQuery("#prev");
+	var next = jQuery("#next");
+	var info = jQuery("#info");
+	var infoH = jQuery("#info > li").outerHeight();
+	var line = jQuery("#line > li");
+	var len = line.length;
+	var line_l=280;
+	info.css({height:infoH*len}); //定义列表信息整体高度
+	jQuery("#line").css({width:200*len});
+	function time_line (index) {
+		line.eq(index).addClass('on').siblings().removeClass('on');
+		jQuery("#line").stop().animate({left:line_l-(200*index)},500,"swing");
+	}
+	function info_move(index){
+		info.stop().animate({top:(0-infoH)*index},500,"swing");
+	}
+	line.click(function() {
+		jQuery(this).addClass('on').siblings().removeClass('on');
+		index = jQuery(this).index();
+		aaa(index);
+		jQuery("#line").stop().animate({left:line_l-(200*index)},500,"swing");
+		info_move(index);
+	});
+	next.click(function() {
+		index++;
+		if(index>=len){
+			index=0;
+		}
+		aaa(index);
+		time_line(index);
+		info_move(index);
+	});
+	prev.click(function() {
+		index--;
+		if(index<0){
+			index=len-1;
+		}
+		aaa(index);
+		time_line(index);
+		info_move(index);
+	});
+	cover.click(function() {
+		cover.animate({top:-coverH}, 500,"swing");
+		index=0;
+		time_line(index);
+		info_move(index);
+		aaa(index);
+	});
+	var map, marker;
+	map = new AMap.Map("c_map",{
+		resizeEnable: true,
+		view: new AMap.View2D({
+			center:new AMap.LngLat(110.345703,34.637912),
+			zoom:4
+		})
+	});
+	// 北京
+    function addMarker(){
+		marker = new AMap.Marker({			  
+			icon:"http://webapi.amap.com/images/marker_sprite.png",
+			position:new AMap.LngLat(116.396885,39.908288),
+			// content: markerContent 
+		});
+		marker.setMap(map);
+	}
+	//上海
+	function addMarker2(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "上海";
+		marker2 = new AMap.Marker({				  
+			position:new AMap.LngLat(121.47583,31.231592),
+			content: markerContent
+		});
+		marker2.setMap(map);
+	}
+	//香港
+	function addMarker3(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "香港";
+		marker3 = new AMap.Marker({				  
+			position:new AMap.LngLat(114.158936,22.289096),
+			content: markerContent
+		});
+		marker3.setMap(map);
+	}
+	//台北
+	function addMarker4(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "台北";
+		marker4 = new AMap.Marker({				  
+			position:new AMap.LngLat(121.503296,25.055745),
+			content: markerContent
+		});
+		marker4.setMap(map);
+	}
+	//成都
+	function addMarker5(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "成都";
+		marker5 = new AMap.Marker({				  
+			position:new AMap.LngLat(104.051514,30.666266),
+			content: markerContent
+		});
+		marker5.setMap(map);
+	}
+	//杭州
+	function addMarker6(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "杭州";
+		marker6 = new AMap.Marker({				  
+			position:new AMap.LngLat(120.151978,30.297018),
+			content: markerContent
+		});
+		marker6.setMap(map);
+	}
+	//广州
+	function addMarker7(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "广州";
+		marker7 = new AMap.Marker({				  
+			position:new AMap.LngLat(113.258057,23.125205),
+			content: markerContent
+		});
+		marker7.setMap(map);
+	}
+	//长春
+	function addMarker8(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "长春";
+		marker8 = new AMap.Marker({				  
+			position:new AMap.LngLat(125.326538,43.893934),
+			content: markerContent
+		});
+		marker8.setMap(map);
+	}
+	//沈阳
+	function addMarker9(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "沈阳";
+		marker9 = new AMap.Marker({				  
+			position:new AMap.LngLat(125.326538,43.893934),
+			content: markerContent
+		});
+		marker9.setMap(map);
+	}
+	//长沙
+	function addMarker10(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "长沙";
+		marker10 = new AMap.Marker({				  
+			position:new AMap.LngLat(112.961426,28.207609),
+			content: markerContent
+		});
+		marker10.setMap(map);
+	}
+	//南京
+	function addMarker11(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "南京";
+		marker11 = new AMap.Marker({				  
+			position:new AMap.LngLat(118.740234,32.063956),
+			content: markerContent
+		});
+		marker11.setMap(map);
+	}
+	//济南
+	function addMarker12(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "济南";
+		marker12 = new AMap.Marker({				  
+			position:new AMap.LngLat(116.982422,36.686041),
+			content: markerContent
+		});
+		marker12.setMap(map); 
+	}
+	//武汉
+	function addMarker13(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "武汉";
+		marker13 = new AMap.Marker({				  
+			position:new AMap.LngLat(114.290771,30.590637),
+			content: markerContent
+		});
+		marker13.setMap(map);
+	}
+	//深圳
+	function addMarker14(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "深圳";
+		marker14 = new AMap.Marker({				  
+			position:new AMap.LngLat(114.082031,22.553147),
+			content: markerContent
+		});
+		marker14.setMap(map); 
+	}
+	//西安
+	function addMarker15(){
+		var markerContent = document.createElement("div");
+			markerContent.className = "markerContentStyle";
+		var markerImg = document.createElement("img");
+			markerImg.className = "markerlnglat";
+			markerImg.src = "http://webapi.amap.com/images/marker_sprite.png";	
+			markerContent.appendChild(markerImg);
+		var markerSpan = document.createElement("span");
+			markerContent.appendChild(markerSpan);
+		markerSpan.innerHTML = "西安";
+		marker15 = new AMap.Marker({				  
+			position:new AMap.LngLat(108.945923,34.266296),
+			content: markerContent
+		});
+		marker15.setMap(map); 
+	}
+  	function aaa(index){
+  		if(index===0){
+	  		map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(116.396885,39.908288),
+					zoom:9 
+				})
+			});
+		    addMarker();
+	    }
+	    if(index===1){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(116.396885,39.908288),
+					zoom:9
+				})
+			});
+		    addMarker();
+	    }
+	    if(index===2){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(110.345703,34.637912),
+					zoom:4
+				})
+			});
+		    addMarker();
+		    addMarker2();
+		    addMarker3();
+		    addMarker4();
+	    }
+	    if(index===3){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(116.396885,39.908288),
+					zoom:9 
+				})
+			});
+		    addMarker();	    	
+	    }
+	    if(index===4){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(110.345703,34.637912),
+					zoom:4
+				})
+			});
+			addMarker();
+		    addMarker2();
+		    addMarker3();
+		    addMarker4();
+		    addMarker5();
+		    addMarker6();
+	    }
+	    if(index===5){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(110.345703,34.637912),
+					zoom:4
+				})
+			});
+			addMarker();
+		    addMarker2();
+		    addMarker7();
+		    addMarker8();
+		    addMarker5();
+		    addMarker6();
+	    }
+	    if(index===6){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(110.345703,34.637912),
+					zoom:4
+				})
+			});
+			addMarker9();
+		    addMarker10();
+		    addMarker11();
+	    }
+	    if(index===7){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(113.345703,30.697912),
+					zoom:5
+				})
+			});
+			addMarker2();
+		    addMarker7();
+		    addMarker12();
+		    addMarker13();
+	    }
+	    if(index===8){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(114.345703,29.097912),
+					zoom:4
+				})
+			});
+			addMarker();
+		    addMarker2();
+		    addMarker3();
+		    addMarker11();
+		    addMarker14();
+		    addMarker15();
+	    }
+	    if(index===9){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(121.437378,31.182847),
+					zoom:9
+				})
+			});
+		    addMarker2();
+	    }
+	    if(index===10){
+	    	map.clearMap();
+		  	map = new AMap.Map("c_map",{
+				resizeEnable: true,
+				view: new AMap.View2D({
+					center:new AMap.LngLat(114.65332,28.110749),
+					zoom:5
+				})
+			});
+		    addMarker7();
+		    addMarker2();
+	    }
+	}
+</script>
+</body>
+</html>
+
+        </div>
+        <!-- 左侧导航栏 -->
+
+
+        <!-- 右侧内容区 -->
+        
+        <!-- 右侧内容区 -->
+      
+      </div>
+
+
+    </div>
+    <!-- 内容区 -->
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="inner">
+          <div id="footer_con1" class="table_cell">
+              <h2>曼巴门徒网</h2><br><br>
+              <ul>
+                  <li>
+                      地址：重庆财经职业学院移动应用开发01班
+                  </li>
+                  <li>
+                      电话：1008610010
+                  </li>
+                  <li>
+                      邮箱：1830807842@qq.coms
+                  </li>
+              </ul>
+              <div id="copyright">
+                  Copyright © SINCE 2022 BULUBULU Ltd. All rights reserved.
+              </div>
+          </div>
+
+          <div id="footer_con2" class="table_cell">
+              <ul>
+                  <li class="table_cell">
+                      <a href="It is me.html" style="color:#6d6b6b;font-size:16px;">生平简介</a>
+                      <a href="It is me.html?flag=self1"><p>个人信息</p></a>
+                      <a href="It is me.html?flag=self2"><p>生涯履历</p></a>
+                      <a href="It is me.html?flag=self3"><p>相关资讯</p></a>
+                      <a href="It is me.html?flag=self4"><p>外界评价</p></a>
+                      <a href="It is me.html?flag=self5"><p>联盟经历</p></a>
+                      <a href="It is me.html?flag=self6"><p>国家队经历</p></a>
+                  </li>
+                  <li class="table_cell">
+                      <a href="My footprint.html" style="color:#6d6b6b;font-size:16px;">科比中国行足迹</a>
+                  </li>
+                  <li class="table_cell">
+                      <a href="My photo.html" style="color:#6d6b6b;font-size:16px;">个人影展</a>
+                  </li>
+                  <li class="table_cell">
+                      <a href="Contact.html" style="color:#6d6b6b;font-size:16px;">联系我们</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  <!-- 页脚 -->
+
+
+
+
+  </body>
+  <script>
+
+    function changsha(){
+      document.getElementById("changsha_travel").style.backgroundColor="#9ac1e6";
+      document.getElementById("nanjing_travel").style.backgroundColor="#fff";
+      document.getElementById("chengdu_travel").style.backgroundColor="#fff";
+      document.getElementById("iframe").src="changsha.html";
+      document.getElementById("iframe").width="750";
+      document.getElementById("iframe").height="920";
+    };
+
+    function nanjing(){
+      document.getElementById("nanjing_travel").style.backgroundColor="#9ac1e6";
+      document.getElementById("changsha_travel").style.backgroundColor="#fff";
+      document.getElementById("chengdu_travel").style.backgroundColor="#fff";
+      document.getElementById("iframe").src="nanjing.html";
+      document.getElementById("iframe").width="750";
+      document.getElementById("iframe").height="920";
+    };
+    
+    function chengdu(){
+      document.getElementById("chengdu_travel").style.backgroundColor="#9ac1e6";
+      document.getElementById("nanjing_travel").style.backgroundColor="#fff";
+      document.getElementById("changsha_travel").style.backgroundColor="#fff";
+      document.getElementById("iframe").src="chengdu.html";
+      document.getElementById("iframe").width="750";
+      document.getElementById("iframe").height="920";
+    };
+    
+    var url = window.location.href;//获取当前浏览器的url  
+    idd = url.indexOf("flag");//判断当前url是否有flag，如果有，说明是从A页面跳转而来的，就执行下面的程序  
+      
+    if(idd !=-1) {//由A页面跳转而来  
+      var index = url.substring(idd+5,url.length); 
+      if(index == 'changsha'){
+        changsha();
+      }else if(index == 'nanjing'){
+        nanjing();
+      }else{
+        chengdu();
+      }
+    }  
+  </script>
+</html>
